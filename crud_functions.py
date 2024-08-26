@@ -33,7 +33,7 @@ for i in range(5, 10):
 def get_all_products():
     cursor.execute('SELECT * FROM Products')
     products = cursor.fetchall()
-    # connection.commit() # сохраняем имзенения
+    connection.commit() # сохраняем имзенения
     return products
 
 # запускаю функцию и дальше использую переменную в телеграм-боте
